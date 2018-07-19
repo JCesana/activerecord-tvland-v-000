@@ -3,6 +3,6 @@ class Actor < ActiveRecord::Base
   has_many :shows, through: :characters 
   
   def full_name
-    
+    "#{Actor.first_name} #{Actor.last_name}"
   end 
 end
